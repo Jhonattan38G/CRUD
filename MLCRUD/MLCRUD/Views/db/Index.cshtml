@@ -1,0 +1,52 @@
+﻿@model List <MLCRUD.Models.ViewModels.ListTablaViewModel>
+@{
+    ViewBag.Title = "Prueba";
+}
+
+<h2>@ViewBag.Title</h2>
+<div style="text-align:right;padding:5px">
+    <a href="~/db/Nuevo" class="btn btn-outline-danger">Formulario</a>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        
+        <table class="table">
+
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Tipo de documento</th>
+                <th>Numero de documento</th>
+                <th>Direccion</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>Fecha</th>
+                <th>-</th>
+            </tr>
+            @foreach (var oElemento in Model)
+            {
+                <tr>
+                    <td>@oElemento.Id</td>
+                    <td>@oElemento.Name</td>
+                    <td>@oElemento.Doc_type</td>
+                    <td>@oElemento.Doc_num</td>
+                    <td>@oElemento.Address</td>
+                    <td>@oElemento.Phone</td>
+                    <td>@oElemento.Email</td>
+                    <td>@oElemento.Date</td>
+                    <td>
+                        <a class=" btn btn-outline-secondary" href="~/db/Editar/@oElemento.Id">editar</a>
+                        <a class=" btn btn-outline-secondary" href="~/db/Editar/@oElemento.Id">eliminar</a>
+
+                    </td>
+                </tr>
+
+            }
+
+        </table>
+
+    </div>
+
+
+</div>

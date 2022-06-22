@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "oxT3P2jYGLXS/YIuG+QvEbERqm3WRlfuLTIi+FNKfae5HSnHmkE3G3csZtv8b+D+mZDz8KIpyv6Ma+1IgSFJ3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jhona\\Downloads\\Punto 7 Prueba tecnica\\ConsoleApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhona\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.26\\microsoft.netcore.app.host.win-x64.3.1.26.nupkg.sha512",
+    "C:\\Users\\jhona\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\jhona\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\jhona\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

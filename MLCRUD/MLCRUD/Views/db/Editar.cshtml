@@ -1,0 +1,50 @@
+﻿@model MLCRUD.Models.ViewModels.TablaViewModel
+@{
+    ViewBag.Title = "Form";
+}
+
+<h2>Editar</h2>
+
+
+@using (Html.BeginForm("Editar", "db", FormMethod.Post))
+{
+    <div>
+        <div class="col-md-12">
+            <div>
+                @Html.LabelFor(d => d.Name)
+                @Html.TextBoxFor(d => d.Name, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Name, null, new { @class = "text-danger" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Doc_type)
+                @Html.TextBoxFor(d => d.Doc_type, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Doc_type, null, new { @class = "red" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Doc_num)
+                @Html.TextBoxFor(d => d.Doc_num, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Doc_num, null, new { @class = "red" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Address)
+                @Html.TextBoxFor(d => d.Address, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Address, null, new { @class = "red" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Phone)
+                @Html.TextBoxFor(d => d.Phone, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Phone, null, new { @class = "red" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Email)
+                @Html.TextBoxFor(d => d.Email, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Email, null, new { @class = "red" })
+            </div>
+
+            <br />
+            <div style="text-align:right">
+                <input value="Guardar" class="btn btn-outline-success" type="submit" />
+            </div>
+        </div>
+    </div>
+}

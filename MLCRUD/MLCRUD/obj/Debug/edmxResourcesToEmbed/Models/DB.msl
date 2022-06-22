@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dataMLModelStoreContainer" CdmEntityContainer="dataMLEntities">
+    <EntitySetMapping Name="db">
+      <EntityTypeMapping TypeName="dataMLModel.db">
+        <MappingFragment StoreEntitySet="db">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="doc_num" ColumnName="doc_num" />
+          <ScalarProperty Name="doc_type" ColumnName="doc_type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spInsertarUsuarios" FunctionName="dataMLModel.Store.spInsertarUsuarios" />
+  </EntityContainerMapping>
+</Mapping>
